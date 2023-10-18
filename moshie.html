@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-like Layout</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-image: url(mtd.jpg); /* Replace 'your-background-image.jpg' with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #header {
+            background-color: black;
+            color: purple;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #search-container {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        #search-box {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid #ccc;
+            border-radius: 30px;
+            font-size: 20px;
+        }
+
+        #search-button {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #search-box, #search-button {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #footer {
+            background-color: purple;
+	        color: black;
+	        text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Google</h1>
+    </div>
+    <div id="search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" id="search-box" name="q" placeholder="Search on Google">
+            <input type="submit" id="search-button" value="Google Search">
+        </form>
+    </div>
+    <div id="footer">
+        &copy; Google 2023
+    </div>
+</body>
+</html>
